@@ -21,3 +21,27 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const database = firebase.database(app);
+
+// Function to load homework data
+function loadHomework() {
+    const dbRef = firebase.database().ref('homework');
+    dbRef.on('value', (snapshot) => {
+        const homeworkList = snapshot.val();
+        const homeworkContainer = document.getElementById('homework');
+        homeworkContainer.innerHTML = '';
+
+        for (const id in homeworkList) {
+            const homework = homeworkList[id];
+            homeworkContainer.innerHTML += `
+                <div class="homework-item">
+                    <h3>${homework.lesson}</h3>
+                    <p>${homework.homework}</p>
+                    <small>${new Date(homework.date).toLocaleDateString()}</small>
+                </div>
+            `;
+        }
+    });
+}
+
+// Call loadHomework on page load
+document.addEventListener('DOMContentLoaded', loadHomework);
