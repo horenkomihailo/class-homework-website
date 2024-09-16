@@ -24,20 +24,21 @@ button:hover {
     background-color: #45a049;
 }
 
-#homework {
-    margin: 20px;
-}
-
-.homework-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
 #adminPanel {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+#loginSection {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
 }
