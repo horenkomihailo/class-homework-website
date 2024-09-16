@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домашние задания</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js"></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,6 +20,11 @@
     <div id="homework">
         <!-- Здесь будут отображаться домашние задания -->
     </div>
-    <script src="script.js"></script>
+    <!-- Панель администратора (показана только для администратора) -->
+    <div id="adminPanel" style="display: none;">
+        <input type="text" id="lesson" placeholder="Урок">
+        <textarea id="homeworkText" placeholder="Домашнее задание"></textarea>
+        <button id="submitHomework">Сохранить домашнее задание</button>
+    </div>
 </body>
 </html>
