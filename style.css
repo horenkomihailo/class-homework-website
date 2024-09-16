@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+#schedule {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#homework {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
