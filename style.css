@@ -1,25 +1,43 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    background-color: #4CAF50;
+    color: white;
     padding: 10px;
-    background-color: #f4f4f4;
+    text-align: center;
 }
 
-#schedule {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 #homework {
     margin: 20px;
 }
 
-button {
+.homework-item {
+    border: 1px solid #ddd;
     padding: 10px;
-    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#adminPanel {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
